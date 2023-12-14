@@ -1,0 +1,7 @@
+<h2>Create Movie</h2>
+
+<app-movie-form 
+    *ngIf="nonSelectedGenres"
+    [nonSelectedGenres]="nonSelectedGenres" 
+    [nonSelectedMovieTheaters]="nonSelectedMovieTheaters"
+    (onSaveChanges)="saveChanges($event)"></app-movie-form>
